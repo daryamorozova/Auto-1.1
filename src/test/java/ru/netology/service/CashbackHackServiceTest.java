@@ -8,7 +8,7 @@ import static org.testng.Assert.*;
 public class CashbackHackServiceTest {
 
     @Test
-    public static void shouldReturn100IfAmountLowerThan1000() {
+    public void shouldReturn100IfAmountLowerThan1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 900;
 
@@ -19,7 +19,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public static void shouldReturnIfAmountGreaterThan1000() {
+    public void shouldReturnIfAmountGreaterThan1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1100;
 
@@ -30,7 +30,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public static void shouldReturn0IfAmount1000() {
+    public void shouldReturn0IfAmount1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1000;
 
